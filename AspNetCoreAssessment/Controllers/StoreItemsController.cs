@@ -2,6 +2,7 @@
 using System.Linq;
 using AspNetCoreAssessment.Filters;
 using AspNetCoreAssessment.Foundation.Interfaces;
+using AspNetCoreAssessment.Foundation.Models;
 using AspNetCoreAssessment.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -63,7 +64,7 @@ namespace AspNetCoreAssessment.Controllers
             };
         }
 
-        private static Foundation.Models.StoreItem CreateFrom(Item item)
+        private static StoreItem CreateFrom(Item item)
         {
             return new()
             {
