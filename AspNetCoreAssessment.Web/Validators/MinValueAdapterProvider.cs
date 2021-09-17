@@ -4,7 +4,7 @@ using Microsoft.Extensions.Localization;
 
 namespace AspNetCoreAssessment.Web.Validators
 {
-    public class AllowedRangeAdapterProvider : IValidationAttributeAdapterProvider
+    public class MinValueAdapterProvider : IValidationAttributeAdapterProvider
     {
         private readonly IValidationAttributeAdapterProvider _baseProvider = new ValidationAttributeAdapterProvider();
 

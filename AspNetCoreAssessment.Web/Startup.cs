@@ -25,7 +25,7 @@ namespace AspNetCoreAssessment.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IValidationAttributeAdapterProvider, AllowedRangeAdapterProvider>();
+            services.AddSingleton<IValidationAttributeAdapterProvider, MinValueAdapterProvider>();
             services.AddScoped<IProductService, ProductService>();
 
             services.AddControllersWithViews(options =>
