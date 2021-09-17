@@ -1,0 +1,22 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Specific product";
+}
+
+<div class="text-center">
+    @using (Html.BeginForm("GetById", "Store", FormMethod.Get))
+    {
+
+        <span>Id: </span> @Html.TextBoxFor(productViewModel => productViewModel.Id)
+        <input id = "Submit" type = "submit" value = "Submit" />
+    }
+
+    @if (Model != null)
+    {
+        <p>
+            <span>@Model.Id</span>
+            <span>@Model.Title</span>
+            <span>@Model.Price</span>
+        </p>
+    }
+</div>

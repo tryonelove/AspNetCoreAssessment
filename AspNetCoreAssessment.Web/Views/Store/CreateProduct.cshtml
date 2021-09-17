@@ -1,0 +1,23 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "All items";
+}
+
+<div>
+    @using (Html.BeginForm("CreateProduct", "Store", FormMethod.Post, new { @id = "form"}))
+    {
+        <p>
+            <span>Id: </span> @Html.TextBoxFor(productViewModel => productViewModel.Id)
+            <span class="text-danger" asp-validation-for="Id"></span>
+        </p>
+        <p>
+            <span>Title: </span> @Html.TextBoxFor(productViewModel => productViewModel.Title)
+        </p>
+        <p>
+            <span>Price: </span> @Html.TextBoxFor(productViewModel => productViewModel.Price)
+        </p>
+        <p>
+            <input id = "Submit" type = "submit" value = "Submit" />
+        </p>
+    }
+</div>

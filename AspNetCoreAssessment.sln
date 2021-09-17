@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAssessment", "AspNetCoreAssessment\AspNetCoreAssessment.csproj", "{C2E366CB-2B09-48D9-97B5-493E9BA39BF0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAssessment.Foundation", "AspNetCoreAssessment.Foundation\AspNetCoreAssessment.Foundation.csproj", "{EB2D0430-9408-49D3-85FE-5E6E8DA47407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAssessment.Web", "AspNetCoreAssessment.Web\AspNetCoreAssessment.Web.csproj", "{5A1E40A5-A0F5-41C3-8F2D-01DC8616672F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2E366CB-2B09-48D9-97B5-493E9BA39BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2E366CB-2B09-48D9-97B5-493E9BA39BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2E366CB-2B09-48D9-97B5-493E9BA39BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2E366CB-2B09-48D9-97B5-493E9BA39BF0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB2D0430-9408-49D3-85FE-5E6E8DA47407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB2D0430-9408-49D3-85FE-5E6E8DA47407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB2D0430-9408-49D3-85FE-5E6E8DA47407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB2D0430-9408-49D3-85FE-5E6E8DA47407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1E40A5-A0F5-41C3-8F2D-01DC8616672F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1E40A5-A0F5-41C3-8F2D-01DC8616672F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1E40A5-A0F5-41C3-8F2D-01DC8616672F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1E40A5-A0F5-41C3-8F2D-01DC8616672F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

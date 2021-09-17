@@ -1,0 +1,28 @@
+﻿@model StoreViewModel
+@{
+    ViewData["Title"] = "All items";
+}
+
+<div>
+    <div class="text-right">
+        <a class="btn btn-primary" href="@Url.Action("CreateProduct", "Store")" role="button">Add product</a>
+        <a class="btn btn-primary" href="@Url.Action("GetById", "Store")" role="button">Get product by id</a>
+    </div>
+    <table class="table table-striped text-center">
+        <thead>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Price</td>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
