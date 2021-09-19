@@ -7,7 +7,7 @@
     @using (Html.BeginForm("CreateProduct", "Store", FormMethod.Post, new { @id = "form"}))
     {
         <p>
-            <span>Id: </span> @Html.TextBoxFor(productViewModel => productViewModel.Id)
+            <span>Id: </span>@Html.TextBoxFor(productViewModel => productViewModel.Id)
             <span class="text-danger" asp-validation-for="Id"></span>
         </p>
         <p>
@@ -21,3 +21,18 @@
         </p>
     }
 </div>
+
+@section Scripts
+{
+    <script>
+        $.validator.unobtrusive.adapters.addSingleVal("minvalue", "value");
+        $.validator.addMethod("minvalue", function (value, element, minValue) {
+            let number = parseInt(value);
+            if (number && number < minValue) {
+                return false;
+            }
+
+            return true;
+        });
+    </script>
+}
