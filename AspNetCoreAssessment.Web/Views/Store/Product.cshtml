@@ -11,12 +11,21 @@
         <input id = "Submit" type = "submit" value = "Submit" />
     }
 
-    @if (Model != null)
+    @if (Model is not null)
     {
-        <p>
-            <span>@Model.Id</span>
-            <span>@Model.Title</span>
-            <span>@Model.Price</span>
-        </p>
+        <table class="table table-striped text-center">
+            <thead>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Price</td>
+            </thead>
+            <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Title</td>
+                <td>@Model.Price</td>
+            </tr>
+            </tbody>
+        </table>
     }
 </div>
