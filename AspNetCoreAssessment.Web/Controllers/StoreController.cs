@@ -104,23 +104,5 @@ namespace AspNetCoreAssessment.Web.Controllers
                 Price = product.Price
             };
         }
-
-        private static StoreViewModel CreateFrom(IReadOnlyCollection<ProductViewModel> products)
-        {
-            return new StoreViewModel
-            {
-                Products = products
-            };
-        }
-
-        private Product CreateFrom(int id, string title, decimal price)
-        {
-            return new Product
-            {
-                Id = id,
-                Title = title,
-                Price = price
-            };
-        }
     }
 }

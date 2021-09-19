@@ -21,7 +21,7 @@ namespace AspNetCoreAssessment.Web.Validators
             var stringNumber = value?.ToString();
             var number = int.Parse(stringNumber);
 
-            return number > _min;
+            return number >= _min;
         }
 
         public void AddValidation(ClientModelValidationContext context)

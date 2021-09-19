@@ -28,11 +28,11 @@
         $.validator.unobtrusive.adapters.addSingleVal("minvalue", "value");
         $.validator.addMethod("minvalue", function (value, element, minValue) {
             let number = parseInt(value);
-            if (number && number < minValue) {
-                return false;
+            if (number && number >= minValue) {
+                return true;
             }
 
-            return true;
+            return false;
         });
     </script>
 }

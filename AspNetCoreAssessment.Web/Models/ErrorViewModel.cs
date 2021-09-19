@@ -1,5 +1,3 @@
-using System;
-
 namespace AspNetCoreAssessment.Web.Models
 {
     public class ErrorViewModel
